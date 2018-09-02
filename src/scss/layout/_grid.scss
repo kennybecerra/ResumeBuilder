@@ -1,0 +1,73 @@
+.main-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    //max-width: 1200px;
+    //margin: 0px auto;
+
+    grid-template-columns: [col-start] 1fr [col-end];
+    grid-template-rows: [header-start] 15% [header-end body-start] 1fr [body-end];
+}
+
+.header {
+    grid-row: header-start / header-end;
+    grid-column: col-start / col-end;
+    background:#fff;
+    //border-bottom:4px solid #33a4c9;
+    
+    display: grid;
+    grid-template-columns: [col-start] 50% [col-mid] 50% [col-end];
+    grid-column-gap: 3rem;
+
+}
+
+.line {
+    grid-row: header-start / header-end;
+    grid-column: col-start / col-end;
+    align-self: end;
+    background-color: #33a4c9;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.body {
+    grid-row: body-start / body-end;
+    grid-column: col-start / col-end;
+    background: #f5f5f5;
+
+    display: grid;
+
+    grid-template-columns: [col-start] 1fr [col-mid] 1fr [col-end];
+    grid-template-rows: [row-2-start] min-content [row-2-end row-3-start] min-content [row-3-end row-4-start] max-content [row-4-end row-5-start] max-content [row-5-end];
+    grid-column-gap: 3rem;
+}
+
+
+.about {
+    grid-column: col-start / col-mid;
+    grid-row: row-2-start / row-2-end;
+    
+}
+
+.skills {
+    grid-column: col-mid / col-end;
+    grid-row: row-2-start / row-2-end;
+}
+
+.experience {
+    grid-column: col-start / col-end;
+    grid-row: row-3-start / row-3-end;
+    
+}
+
+.education {
+    
+    grid-column: col-start / col-mid;
+    grid-row: row-4-start / row-4-end;
+   
+}
+
+.contact {
+    grid-column: col-mid / col-end;
+    grid-row: row-4-start / row-4-end;
+}
