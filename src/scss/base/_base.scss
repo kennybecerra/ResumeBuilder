@@ -18,20 +18,8 @@ body {
     font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
-  //font-weight: 300;
-  //min-height: 100vh;
 }
 
-/*
-@page {
-    size: 8.5in 11in;
-}
-
-@page {
-    size: letter portrait;
-    margin: 0;
-}
-*/
 
 // This is from the style.css - START
 @page{
@@ -47,12 +35,14 @@ body {
   --page-width: 8.5in;
   --page-height: 11in;
   --main-width: 6.4in;
+  /*
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
 
   --sidebar-horizontal-padding: 0.2in;
-
+  */
   /* XXX: using px for very good precision control */
+  /*
   --decorator-outer-offset-top: 10px;
   --decorator-outer-offset-left: -5.5px;
   --decorator-border-width: 1px;
@@ -63,17 +53,13 @@ body {
   --date-block-width: 0.6in;
 
   --main-blocks-title-icon-offset-left: -19pt;
+  */
 }
 
 body{
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  //font-weight: 300;
-  //line-height: 1.3;
-  //color: #444;
   hyphens: auto;
 }
 
-
-// This is from the style.css - END

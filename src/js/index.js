@@ -1,24 +1,17 @@
 import style from "../scss/main.scss";
-//import svg from "../images/SVG/book.svg";
-//import sprite from "../images/SVG/sprite.svg"
+//import img from "../images/wow.jpg";
 import {myFunc} from "./test.js";
 
-// Sets the resources for the projects (images nad SVG)
+
+// Functions meant to include the assets files if they can not be included via the css or html
 function requireAll(r) { r.keys().forEach(r); } 
-requireAll(require.context('../images/SVG/', true, /\.svg$/));
-requireAll(require.context('../images/', true,  /\.(png|jpeg|jpg)$/));
+requireAll(require.context('../assets/SVG/', true, /\.svg$/));
+//requireAll(require.context('../assets/images/', true,  /\.(png|jpeg|jpg)$/));
+//requireAll(require.context('../assets/videos/', true,  /\.(mp4|webm|mov)$/));
 
+let a = "hello";
 
-console.log("hello World");
-//alert("Hello there");
+console.log(a);
 
-let a = "my stuff";
 myFunc();
 
-
-/*{
-    "presets": [
-        "env"
-    ]
-}
-*/
