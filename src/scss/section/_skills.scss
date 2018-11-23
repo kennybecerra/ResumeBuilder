@@ -79,12 +79,12 @@
         width: 100%;
         background-color: #e1e1e1;
         //outline: 2px solid #CEB888;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: .5rem 0;
     
         &--bar {
             height: inherit;
-            width: 60%;
+            width: 90%;
             background-color: #33a4c9;
             background: linear-gradient(90deg,#33a4c9, #33a4c9);
         }
@@ -92,8 +92,9 @@
 
     &__listing {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
+
     }
 }
 
@@ -102,6 +103,7 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    min-width: 30%;
 
     &__fig {
     

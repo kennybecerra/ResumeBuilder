@@ -18,7 +18,6 @@
     display: grid;
     grid-template-columns: [col-start] 50% [col-mid] 50% [col-end];
     grid-column-gap: 3rem;
-
 }
 
 .line {
@@ -46,7 +45,6 @@
 .about {
     grid-column: col-start / col-mid;
     grid-row: row-2-start / row-2-end;
-    
 }
 
 .skills {
@@ -57,14 +55,11 @@
 .experience {
     grid-column: col-start / col-end;
     grid-row: row-3-start / row-3-end;
-    
 }
 
 .education {
-    
     grid-column: col-start / col-mid;
     grid-row: row-4-start / row-4-end;
-   
 }
 
 .contact {
