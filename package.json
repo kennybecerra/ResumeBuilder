@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config=config/webpack.dev.js --open",
     "dev": "webpack --config=config/webpack.dev.js --mode development",
-    "prod": "webpack --config=config/webpack.prod.js --mode production"
+    "prod": "webpack --config=config/webpack.prod.js --mode production",
+    "host": "webpack --config=config/webpack.host.js --mode production"
   },
   "browserslist": [
     "last 5 versions"
