@@ -72,18 +72,18 @@
   }
 
   &__container {
-    height: 0.5rem;
+    height: 3px;
     width: 100%;
-    background-color: #e1e1e1;
+    background-color: white;
     //outline: 2px solid #CEB888;
     //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0.5rem 0;
+    margin: 3px 0;
 
     &--bar {
-      height: inherit;
+      height: 3px;
       width: 100%;
       background-color: #33a4c9;
-      background: linear-gradient(90deg, #33a4c9, #33a4c9);
+      //background: linear-gradient(90deg, #33a4c9, #33a4c9);
     }
   }
 
@@ -111,12 +111,11 @@
 
     &--icon {
       fill: green;
-      //height: 3rem;
     }
   }
 
   &__text {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
