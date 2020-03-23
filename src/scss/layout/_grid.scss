@@ -6,7 +6,7 @@
     //margin: 0px auto;
 
     grid-template-columns: [col-start] 1fr [col-end];
-    grid-template-rows: [header-start] 15% [header-end body-start] 1fr [body-end];
+    grid-template-rows: [header-start] 12% [header-end body-start] 1fr [body-end];
 }
 
 .header {

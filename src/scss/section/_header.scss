@@ -9,7 +9,7 @@
   justify-self: center;
   align-self: center;
   background: #fff;
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   display: grid;
   grid-template-columns: 50% 50%;
@@ -38,13 +38,13 @@
     align-self: center;
     border-radius: 50%;
 
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 11rem;
 
     &--image {
       border-radius: 50%;
-      height: 15rem;
-      width: 15rem;
+      height: 10rem;
+      width: 11rem;
       border: 3px solid #cecece;
     }
   }
