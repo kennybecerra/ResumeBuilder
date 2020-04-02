@@ -32,13 +32,18 @@
 .body {
     grid-row: body-start / body-end;
     grid-column: col-start / col-end;
-    background: #f5f5f5;
+    background-color: #f5f5f5;
 
     display: grid;
 
     grid-template-columns: [col-start] 1fr [col-mid] 1fr [col-end];
-    grid-template-rows: [row-2-start] min-content [row-2-end row-3-start] min-content [row-3-end row-4-start] max-content [row-4-end row-5-start] max-content [row-5-end];
+    grid-template-rows: [row-2-start] min-content [row-2-end row-3-start] min-content [row-3-end row-4-start] min-content [row-4-end row-5-start] min-content [row-5-end];
     grid-column-gap: 3rem;
+
+    @media print {
+        background-color: #f5f5f5!important;
+        -webkit-print-color-adjust: exact!important; 
+    }
 }
 
 

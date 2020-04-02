@@ -10,7 +10,6 @@
     grid-template-rows: [header-start] min-content [header-end body-start] 1fr [body-end];
     grid-gap: .5rem;
 
-    margin-top: .5rem;
 
     &__line {
         grid-row: header-start / header-end;

@@ -61,5 +61,6 @@ body{
   height: var(--page-height);
   margin: 0;
   hyphens: auto;
+  -webkit-print-color-adjust: exact; 
 }
 
