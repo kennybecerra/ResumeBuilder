@@ -11,361 +11,51 @@
     />
   </head>
   <body>
-    <main class="main-container">
-      <section class="header">
-        <!-- Header -->
-        <header class="banner">
-          <hgroup class="banner__header">
-            <h1 class="banner__header--1">Kenny Becerra</h1>
-            <h2 class="banner__header--2">Frontend Developer</h2>
-          </hgroup>
+    <main class="container">
+      <svg
+        class="triangle-container"
+        viewBox="0 0 816 1056"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="myGradient1">
+            <stop offset="5%" stop-color="hsla(259, 53%, 71%, 0)" />
+            <stop offset="95%" stop-color="hsla(259, 53%, 71%, 0.7)" />
+          </linearGradient>
+          <linearGradient id="myGradient2" gradientTransform="rotate(20)">
+            <stop offset="25%" stop-color="hsla(249, 44%, 45%, .9)" />
+            <stop offset="55%" stop-color="hsla(249, 44%, 45%, 0.8)" />
+            <stop offset="95%" stop-color="hsla(249, 44%, 45%, 0.7)" />
+          </linearGradient>
+          <linearGradient id="myGradient3">
+            <stop offset="5%" stop-color="hsla(259, 30%, 78%,1)" />
+            <stop offset="25%" stop-color="hsla(259, 30%, 78%, .5)" />
+            <stop offset="65%" stop-color="hsla(259, 30%, 78%, .1)" />
+          </linearGradient>
+        </defs>
+        <polygon points="0, 0 816, 0 816, 210 0, 80" fill="url(#myGradient1)" />
+        <polygon
+          points="0, 0 816, 0 816, 120 0, 260"
+          fill="url(#myGradient2)"
+        />
+        <polygon
+          points="0, 1056 816, 1056 816, 1040 0, 950"
+          fill="url(#myGradient3)"
+        />
+      </svg>
 
-          <figure class="banner__fig">
-            <img class="banner__fig--image" src="./assets/images/aboutMe_small.jpg" alt="Face photo" />
-          </figure>
-        </header>
-      </section>
-      <div class="line"></div>
-      <section class="body">
-        <section class="about">
-          <figure class="about__fig">
-            <svg class="about__fig__icon">
-              <use xlink:href="./assets/SVG/symbol-defs.svg#icon-profile"></use>
-            </svg>
-          </figure>
-          <h3 class="about__header">About me</h3>
-          <div class="about__line"></div>
-          <div class="about__text">
-            <p>
-              I am a software developer with a passion for frontend development. 
-              I have 3+ years of experience building web applications using vanilla JS, jQuery, 
-              and experienced using frameworks like React, and Ember. Checkout my GitHub to see some 
-              of the Front-end dev projects I've worked on.
-            </p>
-          </div>
-        </section>
+      <div class="left-side">
+        <div class="imgContainer"></div>
+        <div class="contact"></div>
+        <div class="skills"></div>
+      </div>
 
-        <section class="skills">
-          <figure class="skills__fig">
-            <svg class="skills__fig__icon">
-              <use xlink:href="./assets/SVG/symbol-defs.svg#icon-stats-bars2"></use>
-            </svg>
-          </figure>
-          <h3 class="skills__header">Skills</h3>
-          <div class="skills__line"></div>
-
-          <div class="skills__body">
-            <div class="item">
-              <p class="item__header">HTML/CSS</p>
-
-              <div class="item__container">
-                <div class="item__container--bar"></div>
-              </div>
-
-              <div class="item__listing">
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">HTML5</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">CSS3</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">SASS/LESS</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">Flexbox</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">CSS Grid</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">Bootstrap</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <p class="item__header">javascript</p>
-
-              <div class="item__container">
-                <div class="item__container--bar"></div>
-              </div>
-
-              <div class="item__listing">
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">ES5/ES6</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">jQuery</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">React/Redux</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">Node.js</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <p class="item__header">tools</p>
-
-              <div class="item__container">
-                <div class="item__container--bar"></div>
-              </div>
-
-              <div class="item__listing">
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">NPM</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">Webpack</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">Grunt</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">VS Code</p>
-                </div>
-                <div class="list">
-                  <figure class="list__fig">
-                    <svg class="list__fig--icon">
-                      <use xlink:href="./assets/SVG/symbol-defs.svg#icon-checkmark"></use>
-                    </svg>
-                  </figure>
-                  <p class="list__text">Git</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="experience">
-          <figure class="experience__fig">
-            <svg class="experience__fig__icon">
-              <use xlink:href="./assets/SVG/symbol-defs.svg#icon-office"></use>
-            </svg>
-          </figure>
-          <h3 class="experience__header">Work Experience</h3>
-          <div class="experience__line"></div>
-          <div class="experience__body">
-            <div class="experience__body--item">
-              <h4 class="experience__text--1">
-                <span class="experience__text--2">Frontend Developer</span>Inxeption
-              </h4>
-              <p class="experience__text--3">San Francisco, CA</p>
-              <p class="experience__text--3">July 2019 - Present</p>
-              <p class="experience__text--5">
-                Contributed to revamp of company's public-facing website (www.inxeption.com) by adding animations and functionality using vanilla JS, jQuery, and Handlebars.
-              </p>
-              <p class="experience__text--5">
-                Converted Adobe XD wireframes into functional web pages for multiple repositories, using vanilla JS, React/Redux, and Ember/Redux.
-              </p>
-              <p class="experience__text--5">
-                Collaborated with product managers, designers, and backend engineers to resolve bugs and build new features in existing applications.
-              </p>
-              <p class="experience__text--5">
-                Built a development environment/toolset (using Node.js, Express, Handlebars, and MJML) for developing cross-compatible email client templates for web app notifications and outreach.
-              </p>
-            </div>
-            <div class="experience__body--item">
-              <h4 class="experience__text--1">
-                <span class="experience__text--2">Programmer (Frontend)</span>Pacific Gas & Electric
-              </h4>
-              <p class="experience__text--3">San Francisco, CA</p>
-              <p class="experience__text--3">January 2017 - July 2019</p>
-              <p class="experience__text--5">
-                Developed all UI for Third-Party Security (TSR) team vendor database
-                using latest technologies for HTML, CSS, JavaScript, Webpack, Babel, NPM, Jest.
-              </p>
-              <p class="experience__text--5">
-                Utilized Node.js libraries to automate team processes and create tools to enhance
-                email awareness campaigns, metrics tracking, and reporting.
-              </p>
-              <p class="experience__text--5">
-                Developed Single Page Applications (SPAs) in Sharepoint using Semantic UI, jQuery,
-                D3.js and Chart.js for TSR team to access/modify backend database via Sharepoint
-                REST Calls.
-              </p>
-              <p class="experience__text--5">
-                Performed ad-hoc frontend development requests for Cybersecurity cross-team
-                collaboration and data access to TSR team backend.
-              </p>
-            </div>
-            <div class="experience__body--item">
-              <h4 class="experience__text--1">
-                <span class="experience__text--2">Programmer</span>Pacific Gas & Electric
-              </h4>
-              <p class="experience__text--3">San Francisco, CA</p>
-              <p class="experience__text--3">August 2015 - December 2016</p>
-              <p class="experience__text--5">
-                Developed scripting solutions for Energy Procurement Support team ad-hoc requests.
-              </p>
-              <p class="experience__text--5">
-                Developed UI functionality for Energy Procurement System tools using SQL and VBA.
-              </p>
-              <p class="experience__text--5">
-                Automated administrative tasks and workflows using VBA, Python, JavaScript, and SharePoint Rest
-                API.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="education">
-          <figure class="education__fig">
-            <svg class="education__fig__icon">
-              <use xlink:href="./assets/SVG/symbol-defs.svg#icon-library"></use>
-            </svg>
-          </figure>
-          <h3 class="education__header">Education</h3>
-          <div class="education__line"></div>
-          <div class="education__body">
-            <div class="education__body--item">
-              <p class="education__body__text--1">
-                Bachelors of Science in Computer Engineering
-              </p>
-              <p class="education__body__text--2">Florida State University</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="contact">
-          <figure class="contact__fig">
-            <svg class="contact__fig__icon">
-              <use xlink:href="./assets/SVG/symbol-defs.svg#icon-newspaper"></use>
-            </svg>
-          </figure>
-          <h3 class="contact__header">Contact</h3>
-          <div class="contact__line"></div>
-          <div class="contact__body">
-            <div class="contacts">
-              <figure class="contacts__fig">
-                <svg class="contacts__fig__icon">
-                  <use xlink:href="./assets/SVG/symbol-defs.svg#icon-envelop"></use>
-                </svg>
-              </figure>
-              <p class="contacts__text">
-                <a class="contacts__link" href="mailto:kennybecerra.j@gmail.com"
-                  >kennybecerra.j@gmail.com</a
-                >
-              </p>
-              <div class="contacts__line"></div>
-            </div>
-            <div class="contacts">
-              <figure class="contacts__fig">
-                <svg class="contacts__fig__icon">
-                  <use xlink:href="./assets/SVG/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </figure>
-              <p class="contacts__text">
-                <a class="contacts__link" href="https://github.com/kennybecerra" target="_blank"
-                  >https://github.com/kennybecerra</a
-                >
-              </p>
-              <div class="contacts__line"></div>
-            </div>
-            <div class="contacts">
-              <figure class="contacts__fig">
-                <svg class="contacts__fig__icon">
-                  <use xlink:href="./assets/SVG/symbol-defs.svg#icon-linkedin2"></use>
-                </svg>
-              </figure>
-              <p class="contacts__text">
-                <a
-                  class="contacts__link"
-                  href="https://www.linkedin.com/in/kennybecerra/"
-                  target="_blank"
-                  >www.linkedin.com/in/kennybecerra/</a
-                >
-              </p>
-              <div class="contacts__line"></div>
-            </div>
-            <div class="contacts">
-              <figure class="contacts__fig">
-                <svg class="contacts__fig__icon">
-                  <use xlink:href="./assets/SVG/symbol-defs.svg#icon-sphere"></use>
-                </svg>
-              </figure>
-              <p class="contacts__text">
-                <a class="contacts__link" href="https://www.kennybecerra.com" target="_blank"
-                  >https://www.kennybecerra.com</a
-                >
-              </p>
-              <div class="contacts__line"></div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <div class="right-side">
+        <div class="header"></div>
+        <div class="about"></div>
+        <div class="experience"></div>
+        <div class="education"></div>
+      </div>
     </main>
   </body>
 </html>

@@ -9,29 +9,24 @@
 html {
   /* Will set the standard font size of the webpage tp 10px in order to facilitate the use of rem in the whole site*/
   //font-size: 62.5%; // 1rem = 10px  assuming browser default of 16px 62.5% * 16px = 10px;
-  font-size: 8.5px;
+  font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
-    color: #333;
-    font-family: 'Roboto', sans-serif; 
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
 // This is from the style.css - START
-@page{
+@page {
   size: letter portrait;
   margin: 0;
 }
 
-*{
-  box-sizing: border-box;
-}
-
-:root{
+:root {
   --page-width: 8.5in;
   --page-height: 11in;
   --main-width: 6.4in;
@@ -56,11 +51,11 @@ body {
   */
 }
 
-body{
+body {
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
   hyphens: auto;
-  -webkit-print-color-adjust: exact; 
+  -webkit-print-color-adjust: exact;
+  overflow: none;
 }
-

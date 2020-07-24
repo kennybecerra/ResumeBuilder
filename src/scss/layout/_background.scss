@@ -1,0 +1,60 @@
+$triangleColor-1: hsla(229, 37%, 48%, 0.5); //#4e68b0;
+$triangleColor-2: hsla(178, 47%, 54%, 0.5);
+$triangleColor-3: hsla(181, 54%, 81%, 0.5);
+$triangleColor-4: hsla(245, 17%, 72%, 0.7);
+$triangleColor-5: hsla(206, 51%, 61%, 0.7);
+
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 12px 1fr 2fr 12px;
+  grid-template-rows: [row-start-1] auto [row-end-1];
+
+  .triangle-container {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    grid-column: 1 / -1;
+    grid-row: row-start-1 / row-end-1;
+  }
+
+  .left-side {
+    grid-column: 2/3;
+    grid-row: row-start-1 / row-end-1;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(
+      180deg,
+      hsl(235, 76%, 84%),
+      hsl(244, 49%, 75%),
+      hsl(250, 41%, 70%),
+      hsl(261, 30%, 55%)
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+
+    .imgContainer {
+      background-image: url('../assets/images/aboutMe_small.jpg');
+      background-size: 120%;
+      background-position: center 20%;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      border: 3px solid white;
+      height: 225px;
+      width: 225px;
+    }
+  }
+
+  .right-side {
+    grid-column: 3/4;
+    grid-row: row-start-1 / row-end-1;
+  }
+}
