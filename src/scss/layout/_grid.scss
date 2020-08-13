@@ -6,8 +6,8 @@
   //margin: 0px auto;
 
   position: relative;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 25% 75%;
+  grid-template-columns: 262px 1fr;
+  grid-template-rows: 240px 1fr;
 
   z-index: 0;
 
@@ -16,7 +16,7 @@
   .topLeft {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: #283643;
+    background-color: #424859;
 
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@
     padding: 20px 0px;
 
     .image {
-      --imageWidth: 65%;
+      --imageWidth: 60%;
 
       padding-top: var(--imageWidth);
       width: var(--imageWidth);
@@ -40,17 +40,18 @@
   .bottomLeft {
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: #283643;
+    background-color: #424859;
   }
 
   .topRight {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: #ebecee;
+    background-color: #f1f1f1;
   }
 
   .bottomRight {
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: #f1f1f1;
   }
 }

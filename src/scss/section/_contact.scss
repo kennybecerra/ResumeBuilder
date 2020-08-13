@@ -13,7 +13,8 @@
       font-size: 18px;
       line-height: 28px;
       font-weight: 500;
-      font-family: 'Open Sans', sans-serif;
+      // font-family: 'Open Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
       position: relative;
       padding-bottom: 5px;
@@ -43,19 +44,31 @@
         display: flex;
         justify-content: start;
         align-items: center;
-        .items_svg {
-          width: 50px;
-          height: 50px;
+        padding: 5px 0px;
+        .items__svg {
+          flex: 0 0 50px;
+          width: 25px;
+          height: 25px;
           fill: white;
-          padding: 10px;
-          margin-right: 10px;
+          padding: 1px;
+          margin-right: 5px;
         }
 
-        .text {
+        .items__text {
+          flex: 1 0 auto;
           color: white;
           font-size: 12px;
-          font-weight: 300;
-          font-family: 'Open Sans', sans-serif;
+          font-weight: 500;
+          font-family: 'Roboto', sans-serif;
+
+          .items__link {
+            &:active,
+            &:link,
+            &:visited {
+              color: white;
+              text-decoration: none;
+            }
+          }
         }
       }
     }
