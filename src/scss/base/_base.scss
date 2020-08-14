@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: inherit;
 }
 
 html {
@@ -15,7 +16,8 @@ html {
 body {
   box-sizing: border-box;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +36,17 @@ body {
   --page-width: 8.5in;
   --page-height: 11in;
   --main-width: 6.4in;
+
+  --headerFontSize: 30px;
+  --headerLineHeight: 42px;
+  --headerUnderLineWidth: 2px;
+
+  --workWidth: 92%;
+  --timelineSpace: 30px;
+  --timelineWidth: 3px;
+  --xpPadBottom: 20px;
+  --xpPadRight: 10px;
+
   /*
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
