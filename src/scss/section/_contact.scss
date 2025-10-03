@@ -1,4 +1,4 @@
-.bottomLeft {
+.left {
   .contact {
     // border: 1px solid white;
     width: 80%;
@@ -13,14 +13,14 @@
       line-height: var(--headerLineHeight);
       font-weight: 500;
       // font-family: 'Open Sans', sans-serif;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: capitalize;
       position: relative;
       padding-bottom: 5px;
       margin-bottom: 10px;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
 
         bottom: 0px;
@@ -58,7 +58,7 @@
           color: white;
           font-size: 12px;
           font-weight: 500;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
 
           .items__link {
             &:active,

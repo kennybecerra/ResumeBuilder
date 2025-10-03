@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config=config/webpack.dev.js --open",
-    "dev": "webpack --config=config/webpack.dev.js --mode development",
-    "prod": "webpack --config=config/webpack.prod.js --mode production",
-    "host": "webpack --config=config/webpack.host.js --mode production"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pdf": "npx playwright test generate-pdf.spec.ts"
   },
   "browserslist": [
     "last 5 versions"
@@ -17,24 +17,9 @@
   "author": "Kenny Becerra",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "autoprefixer": "^9.7.4",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^1.0.1",
-    "file-loader": "^2.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.13.1",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.3.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
-  },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "@playwright/test": "^1.55.1",
+    "sass": "^1.93.2",
+    "sass-embedded": "^1.93.2",
+    "vite": "^7.1.8"
   }
 }

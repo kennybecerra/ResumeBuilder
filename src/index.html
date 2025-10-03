@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./scss/main.scss" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -20,10 +21,10 @@
   </head>
   <body>
     <main class="main-container">
-      <div class="topLeft">
-        <!-- <div class="image"> </div> -->
-      </div>
-      <div class="bottomLeft">
+      <!-- <div class="topLeft">
+        <div class="image"></div>
+      </div> -->
+      <div class="left">
         <div class="contact">
           <h3>Contact</h3>
           <ul>
@@ -95,8 +96,8 @@
           <h3>Skills</h3>
           <div class="skillSection">
             <p class="skill__title">
-              <span class="skill__marker">/ /</span> Libraries/Frameworks</p
-            >
+              <span class="skill__marker">/ /</span> Libraries/Frameworks
+            </p>
             <ul class="skill__list">
               <li class="skill__item">
                 <p>React / Redux</p>
@@ -128,8 +129,11 @@
             </ul>
           </div>
           <div class="skillSection">
-            <p class="skill__title"> <span class="marker">/ /</span> Tooling</p>
+            <p class="skill__title"><span class="marker">/ /</span> Tooling</p>
             <ul class="skill__list">
+              <li class="skill__item">
+                <p>Vite</p>
+              </li>
               <li class="skill__item">
                 <p>Webpack</p>
               </li>
@@ -155,8 +159,8 @@
           </div>
           <div class="skillSection">
             <p class="skill__title">
-              <span class="marker">/ /</span> Languages</p
-            >
+              <span class="marker">/ /</span> Languages
+            </p>
             <ul class="skill__list">
               <li class="skill__item">
                 <p>JavaScript / TypeScript</p>
@@ -185,16 +189,16 @@
       </div>
       <div class="topRight">
         <div class="header">
-          <p class="name"> <span class="bold"> Kenny </span> Becerra</p>
+          <p class="name"><span class="bold"> Kenny </span> Becerra</p>
           <p class="title">Frontend Engineer</p>
           <p class="intro">
-            <span class="bold">
-              I am a frontend software engineer with 3+ years of experience
-              building production-ready web applications
-            </span>
-            using vanilla JS (ES9), jQuery, React / Redux, and Ember.js.
-            Checkout my GitHub or my portfolio site to see some of the Front-end
-            dev projects I've worked on.
+            <span class="bold"
+              >Frontend Software Engineer with 5+ years of experience</span
+            >
+            building scalable, user-focused applications using
+            <span class="bold">React, TypeScript, and Redux. </span> Skilled in
+            translating designs into functional web apps, optimizing
+            performance, and delivering clean, reliable front-end solutions.
           </p>
         </div>
       </div>
@@ -208,11 +212,60 @@
               </div>
               <div class="info">
                 <p class="position">
+                  <span class="position__location">RedCircle</span>
+                  <span class="position__divider">/</span>
+                  <span class="position__title"
+                    >Frontend Software Engineer</span
+                  >
+                </p>
+                <p class="position__duration">October/2020 - Present</p>
+                <!-- <p class="position__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus
+                </p> -->
+                <ul class="details">
+                  <li class="details__item">
+                    <p>
+                      Led a gradual refactor of the codebase to TypeScript,
+                      improving scalability, debugging, and long-term
+                      maintainability.
+                    </p>
+                  </li>
+                  <li class="details__item">
+                    <p>
+                      Implemented Playwright end-to-end testing, strengthening
+                      reliability and supporting CI/CD workflows.
+                    </p>
+                  </li>
+                  <li class="details__item">
+                    <p>
+                      Built responsive analytics dashboards and creator tools
+                      with React, Redux, and modern state management practices.
+                    </p>
+                  </li>
+                  <li class="details__item">
+                    <p>
+                      Developed interactive, reusable UI components for audio
+                      management, ad marker placement, and monetization
+                      features.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="workItem">
+              <div class="timeline">
+                <div class="circle"></div>
+              </div>
+              <div class="info">
+                <p class="position">
                   <span class="position__location">Inxeption</span>
                   <span class="position__divider">/</span>
-                  <span class="position__title">Frontend Developer</span>
+                  <span class="position__title"
+                    >Frontend Software Engineer</span
+                  >
                 </p>
-                <p class="position__duration"> June/2019 - Present</p>
+                <p class="position__duration">June/2019 - October/2020</p>
                 <!-- <p class="position__summary">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Temporibus
@@ -262,7 +315,7 @@
                     >Frontend Programmer (Associate)</span
                   >
                 </p>
-                <p class="position__duration"> January/2017 - June/2019</p>
+                <p class="position__duration">January/2017 - June/2019</p>
                 <!-- <p class="position__summary">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Temporibus,
@@ -302,48 +355,10 @@
                 </ul>
               </div>
             </div>
-            <div class="workItem">
-              <div class="timeline">
-                <div class="circle"></div>
-              </div>
-              <div class="info">
-                <p class="position">
-                  <span class="position__location">Pacific Gas & Electric</span>
-                  <span class="position__divider">/</span>
-                  <span class="position__title">Software Developer</span>
-                </p>
-                <p class="position__duration"> August/2015 - December/2016</p>
-                <!-- <p class="position__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Temporibus,
-                </p> -->
-                <ul class="details">
-                  <li class="details__item">
-                    <p>
-                      Built realtime dashboard/reporting system to showcase
-                      daily, weekly and monthly Energy Trading data using SQL
-                      queries and internal company scripting software.
-                    </p>
-                  </li>
-                  <li class="details__item">
-                    <p>
-                      Automated administrative tasks and workflows through the
-                      Sharepoint Servicves Rest API using VBA, Python , and
-                      JavaScript.
-                    </p>
-                  </li>
-                  <li class="details__item">
-                    <p>
-                      Developed scripting solutions for Energy Procurement
-                      Support team ad-hoc requests.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </main>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

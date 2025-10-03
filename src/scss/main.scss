@@ -1,17 +1,13 @@
-
 // BASE
-@import "./base/base";
+@use "./base/base";
 
 //LAYOUTS
-@import "./layout/grid";
-
+@use "./layout/grid";
 
 //COMPONENTS
-@import "./section/about";
-@import "./section/contact";
-@import "./section/education";
-@import "./section/experience";
-@import "./section/header";
-@import "./section/skills";
-
-
+@use "./section/about";
+@use "./section/contact";
+@use "./section/education";
+@use "./section/experience";
+@use "./section/header";
+@use "./section/skills";
